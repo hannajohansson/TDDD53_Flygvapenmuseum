@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Info on tab -->
+	<title>Hangman</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/hangman.css">
+
+   	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Source: https://codepen.io/cathydutton/pen/ldazc -->
+		<br>
+	   	<h1>Hänga Gubbe</h1>
+	    <br>
+	    <p>Klicka på bokstäverna i alfabetet för att gissa om de finns med i ordet.<br>
+	    	Klicka på "ledtråd" om du vill ha en ledtråd.</p>
+	</div>
+	<div class="wrapper">
+	    <div id="buttons">
+	    </div>  
+	    	<br><br><br><p id="catagoryName"></p><br>
+	    
+	    <div id="hold"></div>
+	    
+	    <br><p id="mylives"></p>
+	    <p id="clue">LEDTRÅD: -</p>  
+	    <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+	    
+	    <div class="container">
+	      <button id="hint">Ledtråd</button>
+	      <button id="reset">Börja om</button>
+	    </div>
+	</div>
+	
+<script src="js/hangman.js"></script>
+</body>
+
+</html>
