@@ -20,8 +20,11 @@ function getFirstAnswer() {
 		console.log("Rätt svar!");
 		document.getElementById("main").innerHTML = "Bra jobbat! Du gav rätt svar."; 
 
-		//call function 'Beata' after 5 seconds
-		window.setTimeout(Beata(), 5000);
+		//call function 'Beata' after 1,8 seconds
+		setTimeout(function(){  
+        	Beata(); 
+    	}, 1800); 
+		//window.setTimeout function(Beata(), 5000);
 	}
 	else{
 		console.log("Försök igen..");

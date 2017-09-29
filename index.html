@@ -42,7 +42,6 @@
 	<div id="page">
 		<div id="welcome">
 			<br><br><h1>VÄLKOMMEN</h1>
-
 			<div class="main">
 				<br><button type="button" class="button" id="startButton" onclick="showDiv()">STARTA</button>
 		    </div>
@@ -53,11 +52,10 @@
 			<div>
 				<br><br><h1>Vad var svenskarna rädda för under den här tiden?</h1>
 			</div>
-
 			<div>
 				<div class="main">
 					<form>
-			            <input id = "inputtext1" type="text" name="FirstInput" placeholder ="Skriv ditt svar här..." required > 
+			            <input id="inputtext1" type="text" name="FirstInput" placeholder ="Skriv ditt svar här..." required > 
 			        </form>
 						<br><button type="button" class="button" id="answerButton" onclick="getFirstAnswer()">Svara</button>
 			    </div>
@@ -72,7 +70,6 @@
 				<br><br><h1>GRATTIS! Du svarade rätt!</h1>
 				<h3>Nu står du i ett typiskt hem under 1950-talet. <br> Här bor Beata i Stockholms området.</h3>
 			</div>
-
 			<div class="main">
 				<p>Beata kollar ut från fönstret en solig dag och hör ett ekande ljud. <br>
 				Hon tittar upp mot himlen och ser ett flygplan som flyger väldigt nära förbi hennes hus. </p>
@@ -85,7 +82,6 @@
 			<div>
 				<br><br><h1>LEDTRÅD</h1>
 			</div>
-
 			<div class="main">
 				<p>I någon av skåpen finns ett telefonnummer. <br> Hitta numret och slå in det i telefonen. <br>
 					Där får du nästa ledtråd.</p>
@@ -98,7 +94,6 @@
 			<div>
 				<br><br><h1>Vilken ljudsignal hörde du?</h1>
 			</div>
-
 			<div>
 				<div class="main">
 					<p>Tryck på knappen för att höra signalen igen.</p><br><br>
@@ -117,17 +112,27 @@
 				<br><br><h1>GRATTIS! Du svarade rätt! <br> Nu kan du gå till vardagsrummet i 60-talshemmet.</h1>
 				<h2>Kan du se något som inte fanns i det tidigare hemmet?</h2>
 			</div>
-
-			<div>
-				<div class="main">
-					<form>
-			            <input id = "inputtext1" type="text" name="SecondInput" placeholder ="Skriv ditt svar här..." required > 
-			        </form>
-						<br><button type="button" class="button" id="answerButton" onclick="getTVAnswer()">Svara</button>
-			    </div>
-			    <!-- Display feedback -->
-			    <br><br><div id="main"></div>
+			<div class="main">
+				<form>
+		            <input id="inputtext2" type="text" name="SecondInput" placeholder ="Skriv ditt svar här..." required > 
+		        </form>						
+		        <br><button type="button" class="button" id="answerButton" onclick="getTVAnswer()">Svara</button>
 			</div>
+			<!-- Display feedback -->
+			<br><br><div id="main"></div>
+		</div>
+
+		<!-- QUESTION 2, STEP2: Hänga gubbe -->
+		<div id="question2step2"  style="display:none;">
+			<div>
+				<br><br><h1>GRATTIS! Du svarade rätt! <br> Nu ska vi spela "Hänga gubbe".</h1>
+				<h2>Gissa bokstäver från alfabetet A-Ö för att ta reda på det hemliga ordet.</h2>
+			</div>
+			<div class="main">				
+		        <br><button type="button" class="button" id="answerButton">U P P R U S T N I N G</button>
+			</div>
+			<!-- Display feedback -->
+			<br><br><div id="main"></div>
 		</div>
 
 	</div>

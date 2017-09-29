@@ -28,7 +28,7 @@ function showMap() {
    if (footerTop < docHeight) {
     $('.footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
    }
-  });
+ });
 
 
 
