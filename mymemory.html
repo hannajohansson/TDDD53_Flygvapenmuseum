@@ -5,6 +5,26 @@
 <title> MEMORY </title>
 <!-- Source: https://stackoverflow.com/questions/29329698/html5-memory-game-javascript-function -->
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Info on tab -->
+    <title>Hitta försvunna DC3:an</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 <script>
     var clicks = 0; //counts how may picks have been made in each turn
     var firstchoice; //stores index of first card selected
@@ -65,6 +85,20 @@
 </head>
 
 <body style="text-align:center;">
+    <!-- HEADER -->
+    <div id="header">
+        <img id="logga" src="img/logga.JPG" alt="background">
+        <div class="pull-right"><i class="fa fa-location-arrow fa-3x" id="mapIcon" aria-hidden="true" onclick="showMap()"></i></div>
+    </div>
+
+    <div id="boarder"></div>
+
+    <div id="map" style="display:none;">
+        <img id="karta" src="img/karta.PNG" alt="background">
+    </div>
+    <br><bR>
+
+    <!-- PAGE CONTENT -->
      <a href="javascript:choose(0)"><img src="img/memory/guess.jpg" width=150px height=150px /></a>
      <a href="javascript:choose(1)"><img src="img/memory/guess.jpg" width=150px height=150px /></a>
      <a href="javascript:choose(2)"><img src="img/memory/guess.jpg" width=150px height=150px /></a>
@@ -95,6 +129,12 @@
     <b style="font-size:40px; font-family: sans-serif;"> Antal hittade par :</b>
     <b style="font-size:60px; font-family: sans-serif;" id="matches"> 0 </b>
 
+<footer class="footer">
+    <div id="boarder"></div>
+</footer>
+
+<!-- Add scripts -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
