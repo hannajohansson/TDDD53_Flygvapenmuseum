@@ -15,7 +15,7 @@ function getFirstAnswer() {
 	console.log("Ditt svar: " + answer1);
 
 	//Compare input answer with acceptable answers
-	if(answer1 == 'Ryssland' || answer1 == 'ryssarna' || answer1 == 'ryssar'){
+	if(answer1 == 'Ryssland' || answer1 == 'ryssarna' || answer1 == 'ryssar' || answer1 == 'ryssland' || answer1 == 'ryssen'){
 		//https://www.tjvantoll.com/2013/03/14/better-ways-of-comparing-a-javascript-string-to-multiple-values/
 		console.log("Rätt svar!");
 		document.getElementById("main").innerHTML = "Bra jobbat! Du gav rätt svar."; 

@@ -19,11 +19,25 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/hangman.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
 
    	<!-- Font awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
+	<!-- HEADER -->
+	<div id="header">
+		<img id="logga" src="img/logga.JPG" alt="background">
+		<div class="pull-right"><i class="fa fa-location-arrow fa-3x" id="mapIcon" aria-hidden="true" onclick="showMap()"></i></div>
+	</div>
+
+	<div id="boarder"></div>
+
+	<div id="map" style="display:none;">
+		<img id="karta" src="img/karta.PNG" alt="background">
+	</div>
+
+	<!-- PAGE CONTENT -->
 	<div class="wrapper">
 		<!-- Source: https://codepen.io/cathydutton/pen/ldazc -->
 		<br>
@@ -48,7 +62,14 @@
 	      <button id="reset">Börja om</button>
 	    </div>
 	</div>
-	
+	<br><br>
+
+<footer class="footer">
+	<div id="boarder"></div>
+</footer>
+
+<!-- Add scripts -->
+<script src="js/main.js"></script>	
 <script src="js/hangman.js"></script>
 </body>
 
