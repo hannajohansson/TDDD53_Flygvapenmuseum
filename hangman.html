@@ -38,31 +38,40 @@
 	</div>
 
 	<!-- PAGE CONTENT -->
-	<div class="wrapper">
-		<!-- Source: https://codepen.io/cathydutton/pen/ldazc -->
-		<br>
-	   	<h1>Hänga Gubbe</h1>
-	    <br>
-	    <p>Klicka på bokstäverna i alfabetet för att gissa om de finns med i ordet.<br>
-	    	Klicka på "ledtråd" om du vill ha en ledtråd.</p>
+	<div id="hangman">
+		<div class="wrapper">
+			<!-- Source: https://codepen.io/cathydutton/pen/ldazc -->
+			<br>
+		   	<h1>Hänga Gubbe</h1>
+		    <br>
+		    <p>Klicka på bokstäverna i alfabetet för att gissa om de finns med i ordet.<br>
+		    	Klicka på "ledtråd" om du vill ha en ledtråd.</p>
+		</div>
+		<div class="wrapper">
+		    <div id="buttons">
+		    </div>  
+		    	<br><br><br><p id="catagoryName"></p><br>
+		    
+		    <div id="hold"></div>
+		    
+		    <br><p id="mylives"></p>
+		    <p id="clue">LEDTRÅD: -</p>  
+		    <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+		    
+		    <div class="container">
+		      <button id="hint">Ledtråd</button>
+		      <button id="reset">Börja om</button>
+		    </div>
+		</div>
+		<br><br>
 	</div>
-	<div class="wrapper">
-	    <div id="buttons">
-	    </div>  
-	    	<br><br><br><p id="catagoryName"></p><br>
-	    
-	    <div id="hold"></div>
-	    
-	    <br><p id="mylives"></p>
-	    <p id="clue">LEDTRÅD: -</p>  
-	    <canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
-	    
-	    <div class="container">
-	      <button id="hint">Ledtråd</button>
-	      <button id="reset">Börja om</button>
-	    </div>
+
+	<div id="continue" style="display:none;">
+		<h1>Du klarade det!</h1>
+		<div>
+			<br><button type="button" class="button" id="clickContinue"><a href="mymemory.html">GÅ VIDARE</a></button>
+		    </div>
 	</div>
-	<br><br>
 
 <footer class="footer">
 	<div id="boarder"></div>
@@ -71,6 +80,7 @@
 <!-- Add scripts -->
 <script src="js/main.js"></script>	
 <script src="js/hangman.js"></script>
+<script src="js/60talet.js"></script>
 </body>
 
 </html>

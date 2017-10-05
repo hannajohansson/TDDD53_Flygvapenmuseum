@@ -40,3 +40,9 @@ function wordGame() {
   	document.getElementById('question2').style.display = "none";
 }
 
+//Show entire div after pressing a button
+function Continue() {
+	document.getElementById('continue').style.display = "block";
+  	document.getElementById('hangman').style.display = "none";
+}
+

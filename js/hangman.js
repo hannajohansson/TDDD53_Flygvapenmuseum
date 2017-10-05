@@ -77,6 +77,10 @@ window.onload = function () {
     for (var i = 0; i < geusses.length; i++) {
       if (counter + space === geusses.length) {
         showLives.innerHTML = "Du gissade rätt!";
+
+          //call function 'continue' after 1,8 seconds
+          setTimeout(function(){  
+          Continue(); }, 1800); 
       }
     }
   }
